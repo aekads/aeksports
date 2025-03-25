@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aek Sports</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: rgba(224, 224, 224, 1);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .header-logo {
+            width: 150px;
+            max-width: 20%;
+            height: auto;
+        }
+
+        .main-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo-container {
+            max-width: 500px;
+            width: 80%;
+            padding: 20px;
+        }
+
+        .main-logo,
+        .coming {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .coming-soon {
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        .side-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 58%;
+            height: 100%;
+            background: url("https://res.cloudinary.com/dykvdhxke/image/upload/v1742892360/bgg_ssdkge.png") center/cover no-repeat;
+            z-index: -1;
+        }
+
+        @media (max-width: 1024px) {
+            .side-bg {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .side-bg {
+                display: none;
+            }
+
+            .header-logo {
+                max-width: 30%;
+            }
+
+            .logo-container {
+                width: 80%;
+            }
+
+            .coming-soon {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-logo {
+                max-width: 40%;
+            }
+
+            .logo-container {
+                width: 90%;
+            }
+
+            .coming-soon {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://res.cloudinary.com/dykvdhxke/image/upload/v1742894756/sports_yj9nsk.png"
+            alt="Aek Sports Header Logo" class="header-logo">
+    </header>
+
+    <main class="main-container">
+        <div class="side-bg" aria-hidden="true"></div>
+        <div class="content-container">
+            <div class="logo-container">
+                <img src="https://res.cloudinary.com/dykvdhxke/image/upload/v1742894756/sports_yj9nsk.png"
+                    alt="Aek Sports Logo" class="main-logo">
+            </div>
+            <div class="coming-soon">
+                <img src="https://res.cloudinary.com/dykvdhxke/image/upload/v1742893676/image_uuhhlt.png"
+                    alt="Coming Soon" class="coming">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
